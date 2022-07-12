@@ -150,6 +150,8 @@ end = time.time()
 total_time = end - start
 print("\n"+ str(total_time))
 
+df.to_csv(os.path.join(outdir,'StatisticalSummaries.csv'))
+
 # Can we differentiate between classes using statistical summaries?
 # Visualise difference between classes, variable by variable
 for var in colnames[2:len(colnames)]:
